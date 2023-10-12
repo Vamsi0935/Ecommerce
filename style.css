@@ -145,7 +145,7 @@ p {
 
 .col-4 img {
     width: 100%;
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 .title {
@@ -191,6 +191,7 @@ h4 {
 
 .col-4:hover {
     transform: translateY(-5px);
+    box-shadow: 1px 1px 5px 2px #eee;
 }
 
 .offer {
