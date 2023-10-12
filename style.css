@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: 'Domine', serif;
     font-family: 'Kalam', cursive;
     font-family: 'Libre Baskerville', serif;
@@ -19,6 +20,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -30,11 +32,23 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
+    position: relative;
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 30px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: black;
+    font-style: italic;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
 }
 
 a {
@@ -67,7 +81,7 @@ p {
 
 .col-2 img {
     max-width: 100%;
-    padding: 50px 10px;
+    padding: 30px 40px;
 }
 
 .col-2 h1 {
@@ -121,14 +135,17 @@ p {
 
 .col-4 {
     flex-basis: 10%;
-    padding: 20px;
-    min-width: 200px;
+    min-width: 250px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+    border-radius: 10%;
 }
 
 .col-4 img {
-    width: 150%;
+    width: 100%;
+    border-radius: 10%;
 }
 
 .title {
@@ -152,20 +169,24 @@ p {
 }
 
 h4 {
-    color: #555;
-    font-weight: bolder;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
 }
 
 .col-4 {
-    font-size: 14px;
+    font-size: 18px;
+
 }
 
 .col-4 p {
-    font-size: 14px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .rating {
     color: #ff523b;
+    text-align: center;
 }
 
 .col-4:hover {
@@ -191,9 +212,12 @@ h4 {
 }
 
 .testimonial .col-3 {
+    width: 180px;
     text-align: center;
     padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid black;
+    border-radius: 4px;
     cursor: pointer;
     transition: transform 0.5s;
 }
@@ -223,6 +247,39 @@ h4 {
     font-weight: 600;
     color: #555;
     font-size: 16px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+.newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+.newsletter p span{
+    color: #ffbd27;
+}
+.newsletter input{
+    height: 30125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
 }
 
 .brands {
